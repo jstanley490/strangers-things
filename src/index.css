@@ -1,0 +1,234 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e5e9eb;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+}
+button {
+  color: #3a6d8b;
+  background-color: white;
+  font-weight: 500;
+  font-size: medium;
+  border: 1px solid black;
+  box-shadow: 1px 1px grey;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 6px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+textarea {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+}
+textarea:hover,
+input:hover,
+button:hover {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+button:active {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
+  transform: translateY(1px);
+}
+
+.navbar {
+  background-color: #254558;
+  color: whitesmoke;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar > a:visited {
+  color: whitesmoke;
+}
+.nav-links {
+  font-weight: bold;
+  padding-right: 25px;
+  display: flex;
+}
+.nav-links > a {
+  text-decoration: none;
+
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.nav-links > a:visited {
+  color: whitesmoke;
+}
+#logo {
+  text-decoration: none;
+  font-size: 2.15rem;
+  font-weight: bolder;
+  font-family: "Ysabeau", sans-serif;
+  padding-left: 25px;
+
+  align-self: flex-start;
+}
+.auth {
+  padding: 1rem;
+  margin: 8rem;
+  box-shadow: 4px 4px 6px 2px grey;
+  border-radius: 6px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.auth > form > input {
+  margin: 8px;
+}
+
+#sidebar {
+  box-shadow: 2px 6px 6px 3px grey;
+  border-radius: 0px 6px 6px 0px;
+  height: 85vh;
+  width: 22rem;
+  background-color: #f7f7f7;
+  border-right: solid 1px #e3e3e3;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  position: sticky;
+  top: 0;
+}
+#sidebar > * {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.search {
+  margin-bottom: 2rem;
+}
+.stranger-post {
+  padding: 2rem;
+  margin: 12px;
+  box-shadow: 4px 4px 6px 2px grey;
+  border-radius: 6px;
+  background-color: whitesmoke;
+}
+.stranger-post > h2 {
+  margin-top: 0;
+}
+.stranger-post > p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.stranger-post > p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+.description {
+  color: #37506b;
+  font-size: large;
+  margin-bottom: 0.75rem !important;
+}
+.post-results > main {
+  flex-grow: 2;
+}
+.post-results {
+  display: flex;
+}
+.posts-button {
+  color: #3a6d8b;
+  background-color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: medium;
+  border: 1px solid black;
+  box-shadow: 1px 1px grey;
+  border-radius: 6px;
+  margin-top: 2rem;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.manage {
+  color: rgb(204, 4, 4);
+}
+
+#msg-title {
+  text-align: center;
+  font-weight: normal;
+}
+.post-msgs {
+  width: 75%;
+  margin: auto;
+}
+#delivery {
+  color: rgb(1, 114, 1);
+  font-weight: bold;
+}
+
+.profile {
+  text-align: center;
+  background-color: #25455847;
+  box-shadow: 1px 4px 4px 2px #65768047;
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.profile-body {
+  display: flex;
+  justify-content: center;
+}
+.profile-body > main {
+  flex-grow: 2;
+}
+.my-posts {
+  width: 98%;
+  margin: auto;
+}
+.submit-post {
+  padding: 1rem;
+  /* box-shadow: 4px 4px 6px 2px grey; */
+  border-radius: 6px;
+  background-color: whitesmoke;
+}
+.submit-post > form {
+  display: flex;
+  flex-direction: column;
+}
+.submit-post > h2 {
+  margin-top: 0;
+  text-align: center;
+}
+.submit-post > form > input,
+textarea {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  width: 100%;
+}
+.checkbox {
+  width: 13px !important;
+  margin-right: 8px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.err-msg {
+  color: rgb(217, 3, 3);
+  font-size: small;
+  font-weight: bold;
+}
